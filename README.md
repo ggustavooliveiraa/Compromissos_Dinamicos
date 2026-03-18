@@ -1,78 +1,122 @@
-Sistema de Gerenciamento de Compromissos
-📌 Descrição
+Appointment Management System
+📌 Description
 
-Este projeto consiste em um sistema de gerenciamento de compromissos desenvolvido em linguagem C. O programa realiza a leitura de dados a partir de um arquivo entrada.csv, armazena os compromissos em memória utilizando estruturas (struct) e permite:
-Adicionar compromissos, Remover compromissos, Ordenar compromissos por diferentes critérios, Listar compromissos e Salvar automaticamente as alterações no arquivo. O sistema foi desenvolvido conforme os requisitos do trabalho acadêmico, incluindo múltiplos critérios de ordenação e persistência dos dados no arquivo.
+This project consists of an Appointment Management System developed in C.
 
-🗂 Estrutura dos Dados
+The program reads data from a file named entrada.csv, stores appointments in memory using structures (struct), and allows users to:
 
-Cada compromisso contém os seguintes campos:
+Add appointments
 
-Ano.
+Remove appointments
 
-Mês.
+Sort appointments using multiple criteria
 
-Dia.
+List appointments
 
-Hora.
+Automatically save changes to the file
 
-Minuto.
+The system was developed according to academic requirements, including multiple sorting criteria and persistent data storage.
 
-Duração (em horas).
+🗂 Data Structure
 
-Prioridade (1 a 5).
+Each appointment contains the following fields:
 
-Nome.
+Year
 
-Descrição.
+Month
 
-Local.
+Day
 
-Esses dados são armazenados na seguinte estrutura:
+Hour
 
- Entrada de Dados:
+Minute
 
-Os compromissos são lidos automaticamente do arquivo: entrada.csv
+Duration (in hours)
 
+Priority (1 to 5)
 
-📋 Funcionalidades
+Name
 
-O sistema apresenta o seguinte menu:
+Description
 
-Adicionar compromisso.
+Location
 
-Remover compromisso.
+All data is stored using a structured data type (struct).
 
-Ordenar por data.
+Data Input
 
-Ordenar por data e horário.
+Appointments are automatically loaded from the file:
 
-Ordenar por data e prioridade.
+entrada.csv
+📋 Features
 
-Ordenar por local, prioridade e duração (decrescente).
+The system provides the following menu options:
 
-Listar compromissos.
+Add appointment
 
-Sair.
+Remove appointment
 
-Critérios de Ordenação:
-✔ Ordenar por data
+Sort by date
 
-Ordenação crescente por: Ano, Mês e Dia
+Sort by date and time
 
-✔ Ordenar por data e horário
+Sort by date and priority
 
-Ordenação crescente por: Ano, Mês, Dia, Hora e Minuto.
+Sort by location, priority, and duration (descending)
 
-✔ Ordenar por data e prioridade.
+List appointments
 
-Ordenação por: Ano, Mês, Dia
+Exit
 
-Prioridade (maior prioridade primeiro)
+Sorting Criteria
+✔ Sort by Date
 
-✔ Ordenar por local, prioridade e duração (decrescente)
+Ascending order by:
 
-Ordenação por: Local (ordem alfabética), Prioridade (maior primeiro), Duração (maior primeiro).
+Year
 
-Persistência:
-Sempre que um compromisso é adicionado ou removido, o arquivo entrada.csv é atualizado automaticamente, garantindo que os dados permaneçam salvos mesmo após o encerramento do programa.
+Month
+
+Day
+
+✔ Sort by Date and Time
+
+Ascending order by:
+
+Year
+
+Month
+
+Day
+
+Hour
+
+Minute
+
+✔ Sort by Date and Priority
+
+Sorted by:
+
+Year
+
+Month
+
+Day
+
+Priority (higher priority first)
+
+✔ Sort by Location, Priority, and Duration (Descending)
+
+Sorted by:
+
+Location (alphabetical order)
+
+Priority (higher first)
+
+Duration (longer first)
+
+Data Persistence
+
+Whenever an appointment is added or removed, the file entrada.csv is automatically updated.
+
+This ensures that all data remains saved even after the program is closed.
